@@ -1,0 +1,63 @@
+h1, h2, h3, h4, h5, h6, ul, li, p {
+    margin:unset;
+    padding:unset;
+}
+
+body {
+    background-color:#111;
+    font-family:"Roboto";
+    overflow-x:hidden;
+}
+
+#banner_contain {
+    height:100vh;
+    width:100%;
+    background-color:black;
+}
+
+/**ABOUT ME**/
+.intro_text {
+    width:25%;
+    text-align:center;
+    margin:auto;
+}
+
+/**WORK TILE**/
+.full_work_tile {
+    width:80%;
+    height:650px;
+    margin-left:10%;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.work_tile_title {
+    width:22%;
+    height:100%;
+    float:left;
+    text-align:right;
+    font-size:0.9em;
+    margin-right:3%;
+    color:gray;
+}
+
+.work_tile {
+    width:75%;
+    height:100%;
+    float:left;
+    background-color:gray;
+}
+
+.work_number {
+    font-weight:bolder;
+    font-size:3em;
+}
+
+/**MISC**/
+.liner {
+    height:1px;
+    width:25%;
+    margin:5px 0 5px 0;
+    margin-left:75%;
+    background-color:gray;
+}
