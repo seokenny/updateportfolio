@@ -55,4 +55,6 @@ $(document).ready(function(){
         $("#work_page_contain").stop().animate({left:'100%'}, 500);
     });
 
+
+    
 });

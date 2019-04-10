@@ -7,6 +7,18 @@ a {
     text-decoration:none;
 }
 
+.wt_center {
+	/**Start of vertical/horizontal centering**/
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	/**End of vertical/horizontal centering**/
+	text-align:center;
+	width:100%;
+	letter-spacing:0.1em;
+}
+
 body {
     background-color:black;
     font-family:"Roboto";
@@ -15,7 +27,7 @@ body {
 }
 
 #main_contain {
-    background-image:url("../images/lineartbg.png");
+    background-image:url("../images/linebgfinal.jpg");
     background-size:cover;
     background-attachment:fixed;
 }
@@ -23,8 +35,7 @@ body {
 #banner_contain {
     height:100vh;
     width:100%;
-    background-color:black;
-    background-image:url("../images/lineartbg.png");
+    /* background-image:url("../images/lineartbg.png"); */
     background-size:cover;
     background-attachment:fixed;
 }
@@ -38,18 +49,23 @@ body {
     width:85%;
     text-align:left;
     margin:auto;
-    margin-top:5%;
     margin-bottom:10%;
     line-height:1.5em;
     font-size:1.25em;
+}
+
+.intro_text {
+    margin:0;
+    margin:auto;
+    margin-top:50px;
 }
 
 .hey_there {
     width:85%;
     text-align:left;
     margin:auto;
-    padding-top:10%;
-    font-size:10vw;
+    font-size:20vw;
+    line-height:15vw;
     font-family:"Permanent Marker";
     letter-spacing:1vw;
 }
@@ -312,12 +328,17 @@ form {
         opacity:1;
         transition:opacity .15s linear;
     }
+    .intro_text {
+        width:75%;
+    }
+    .intro_text_inner {
+        width:50%;
+    }
     .work_tile {
         width:85%;
         display:inline-block;
         margin:unset;
     }
-
     .bw_image:hover {
         opacity:0;
     }
@@ -327,19 +348,25 @@ form {
         display:inline-block;
         vertical-align:top;
     }
-
     .full_work_tile {
         margin-top:75px;
         margin-bottom:75px;
         width:75%;
         margin-left:12.5%;
     }
-
     .liner {
         margin-left:75%;
     }
     .contain_border {
         width:550px;
         margin-top:unset;
+    }
+    .hey_there {
+        font-size:11em;
+        width:50%;
+        line-height:150px;
+    }
+    .intro_text {
+        font-size:1.8em;
     }
 }
