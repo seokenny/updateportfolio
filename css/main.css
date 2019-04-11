@@ -277,16 +277,17 @@ form {
     width:80%;
     line-height:1.75em;
     letter-spacing:0.1em;
+    margin-bottom:30px;
 }
 
 .work_text {
     font-size:0.7em;
-    margin-bottom:5%;
+    margin-bottom:20px;
 }
 
 .work_header, .work_role {
-    margin-top:10%;
-    margin-bottom:2.5%;
+    margin-top:40px;
+    margin-bottom:20px;
 }
 
 .work_link {
@@ -295,6 +296,54 @@ form {
     border-radius:20px;
     color:white;
     font-size:0.8em;
+}
+
+.mobile_nav_button {
+    display:flex;
+    justify-content:flex-end;
+}
+
+#mobile_nav ul {
+    font-size:3em;
+    text-align:center;
+    font-family:"Permanent Marker";
+}
+
+.m_nav_button {
+    margin:20px;
+    cursor:pointer;
+}
+
+.m_n_b {
+    height:25px;
+    position:fixed;
+    right:10px;
+    top:10px;
+}
+
+#mobile_nav {
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:20;
+    background-image:url("../images/darknoise.gif");
+    color:white;
+}
+
+.social_list {
+    display:flex;
+    justify-content: center;
+    list-style-type:none;
+}
+
+.social_list li {
+    margin:unset;
+    margin:10px;
+    display:inline-block;
+}
+
+.social_button {
+    height:35px;
 }
 
 /**MISC**/
@@ -369,4 +418,12 @@ form {
     .intro_text {
         font-size:1.8em;
     }
+    .work_content {
+        width:60%;
+        margin-left:20%;
+    }
+}
+
+@media only screen and (min-width:1000px){
+
 }

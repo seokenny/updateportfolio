@@ -55,6 +55,9 @@ $(document).ready(function(){
         $("#work_page_contain").stop().animate({left:'100%'}, 500);
     });
 
-
     
+});
+
+document.querySelector("#mobile_nav").addEventListener("click",function(){
+    document.querySelector("#mobile_nav").style.display = "none";
 });
