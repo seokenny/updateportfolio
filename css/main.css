@@ -256,28 +256,22 @@ form {
     width:100%;
     background-color:black;
     position:fixed;
-    overflow:scroll;
     z-index:300;
     left:100%;
     overflow-x:hidden;
 }
 
-.work_page_select {
-    padding-bottom:25px;
-}
-
 .wps_banner {
     height:100vh;
     width:100%;
-    background-color:coral;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
 }
 
 .work_content{
-    margin-left:10%;
-    width:80%;
     line-height:1.75em;
     letter-spacing:0.1em;
-    margin-bottom:30px;
 }
 
 .work_text {
@@ -286,7 +280,7 @@ form {
 }
 
 .work_header, .work_role {
-    margin-top:40px;
+    padding-top:40px;
     margin-bottom:20px;
 }
 
@@ -330,6 +324,10 @@ form {
     color:white;
 }
 
+#mobile_nav ul li {
+    list-style-type:none;
+}
+
 .social_list {
     display:flex;
     justify-content: center;
@@ -345,6 +343,31 @@ form {
 .social_button {
     height:35px;
 }
+
+.work_width {
+    width:80%;
+}
+
+.wps_rugsusa {
+    background-image:url("../images/color_rugsusa.jpg");
+}
+
+.wps_fuyuramen {
+    background-image:url("../images/color_fuyuramen.jpg");
+}
+
+.wps_mystiq {
+    background-image:url("../images/color_mystiq.jpg");
+}
+
+.wps_zombie {
+    background-image:url("../images/color_zombiedice.jpg");
+}
+
+.wps_guesser {
+    background-image:url("../images/color_guesser.jpg");
+}
+
 
 /**MISC**/
 .hidden {
@@ -369,6 +392,9 @@ form {
 @media only screen and (min-width:900px){
     #main_contain {
         padding-bottom:50px;
+    }
+    .open_m_nav {
+        display:none;
     }
     .bw_image {
         display:block;
@@ -420,7 +446,6 @@ form {
     }
     .work_content {
         width:60%;
-        margin-left:20%;
     }
 }
 

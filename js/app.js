@@ -1,3 +1,5 @@
+$("#mobile_nav").hide();
+
 $(document).ready(function(){
 
     $(".wt_rugsusa").on("click",function(){
@@ -57,7 +59,13 @@ $(document).ready(function(){
 
     
 });
+document.querySelector(".open_m_nav").addEventListener("click",function(){
+    document.querySelector("#mobile_nav").style.display = "block";
+    document.querySelector("#mobile_nav").classList.remove("flipOutX");
+    document.querySelector("#mobile_nav").classList.add("flipInX");
+});
 
-document.querySelector("#mobile_nav").addEventListener("click",function(){
-    document.querySelector("#mobile_nav").style.display = "none";
+document.querySelector(".close_m_nav").addEventListener("click",function(){
+    document.querySelector("#mobile_nav").classList.remove("flipInX");
+    document.querySelector("#mobile_nav").classList.add("flipOutX");
 });
