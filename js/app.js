@@ -69,3 +69,33 @@ document.querySelector(".close_m_nav").addEventListener("click",function(){
     document.querySelector("#mobile_nav").classList.remove("flipInX");
     document.querySelector("#mobile_nav").classList.add("flipOutX");
 });
+
+$(".m_nav_home").on("click",function(){
+    $("html, body").animate({
+        scrollTop: $("#banner_contain").offset().top
+    },150, function(){
+        closeNavMenu();
+    });
+});
+
+$(".m_nav_work").on("click", function(){
+    $("html, body").animate({
+        scrollTop: $("#work_contain").offset().top - 50
+    },150, function(){
+        closeNavMenu();
+    });
+});
+
+$(".m_nav_contact").on("click",function(){
+    $("html, body").animate({
+        scrollTop: $("#contact_contain").offset().top
+    },150, function(){
+        closeNavMenu();
+    });
+});
+
+
+function closeNavMenu(){
+    document.querySelector("#mobile_nav").classList.remove("flipInX");
+    document.querySelector("#mobile_nav").classList.add("flipOutX");
+}
