@@ -70,6 +70,7 @@ document.querySelector(".close_m_nav").addEventListener("click",function(){
     document.querySelector("#mobile_nav").classList.add("flipOutX");
 });
 
+//MOBILE NAVIGATION
 $(".m_nav_home").on("click",function(){
     $("html, body").animate({
         scrollTop: $("#banner_contain").offset().top
@@ -94,6 +95,31 @@ $(".m_nav_contact").on("click",function(){
     });
 });
 
+//DESKTOP NAVIGATION
+$(".nav_home").on("click",function(){
+    $("html, body").animate({
+        scrollTop: $("#banner_contain").offset().top
+    }, 750);
+});
+
+$(".nav_work").on("click",function(){
+    $("html, body").animate({
+        scrollTop: $("#work_contain").offset().top - 100
+    }, 750);
+});
+
+$(".nav_contact").on("click",function(){
+    $("html, body").animate({
+        scrollTop: $("#contact_contain").offset().top
+    }, 750);
+});
+
+//NAV BAR CHANGE COLOR
+if($(window).scrollTop() == 0){
+    document.querySelector(".full_nav_bar").style.background = "white";
+}
+else
+    document.querySelector(".full_nav_bar").style.background = "black";
 
 function closeNavMenu(){
     document.querySelector("#mobile_nav").classList.remove("flipInX");
