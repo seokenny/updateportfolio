@@ -414,7 +414,6 @@ form {
 
 .go_back {
     text-align:center;
-    margin-top:25px;
 }
 
 .back_button {
@@ -435,8 +434,16 @@ form {
     color:coral;
 }
 
+.m_nav_button:hover {
+    color:coral;
+}
+
 .copyright {
     font-size:0.7em;
+}
+
+.close_m_nav, .open_m_nav {
+    cursor:pointer;
 }
 
 /**FOOTER**/
@@ -470,6 +477,12 @@ form {
         display:none;
     }
     #full_nav {
+        display:none;
+    }
+    #full_nav_2 {
+        display:none !important;
+    }
+    footer {
         display:none;
     }
 }
@@ -535,8 +548,14 @@ form {
     #full_nav {
         display:block;
     }
+    #full_nav_2 {
+        display:block;
+    }
     .work_width {
         width:530px;
+    }
+    footer {
+        display:block;
     }
 }
 
