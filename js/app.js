@@ -9,7 +9,7 @@ $(document).ready(function(){
             });
     });
 
-    $(".wps_banner").on("click",function(){
+    $(".go_back").on("click",function(){
         $(".rugsusa_tile").stop().fadeOut();
         $("#work_page_contain").stop().animate({left:'100%'}, 500);
     });
@@ -20,7 +20,7 @@ $(document).ready(function(){
         });
     });
 
-    $(".wps_banner").on("click",function(){
+    $(".go_back").on("click",function(){
         $(".fuyuramen_tile").stop().fadeOut();
         $("#work_page_contain").stop().animate({left:'100%'}, 500);
     });
@@ -31,7 +31,7 @@ $(document).ready(function(){
         });
     });
 
-    $(".wps_banner").on("click",function(){
+    $(".go_back").on("click",function(){
         $(".mystiq_tile").stop().fadeOut();
         $("#work_page_contain").stop().animate({left:'100%'}, 500);
     });
@@ -42,7 +42,7 @@ $(document).ready(function(){
         });
     });
 
-    $(".wps_banner").on("click",function(){
+    $(".go_back").on("click",function(){
         $(".zombiedice_tile").stop().fadeOut();
         $("#work_page_contain").stop().animate({left:'100%'}, 500);
     });
@@ -53,7 +53,7 @@ $(document).ready(function(){
         });
     });
 
-    $(".wps_banner").on("click",function(){
+    $(".go_back").on("click",function(){
         $(".guesser_tile").stop().fadeOut();
         $("#work_page_contain").stop().animate({left:'100%'}, 500);
     });

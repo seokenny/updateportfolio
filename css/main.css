@@ -59,6 +59,7 @@ body {
     margin-left:15px;
     margin-right:15px;
     margin-top:25px;
+    height:0;
 }
 
 .fnb_black {
@@ -411,6 +412,32 @@ form {
     background-image:url("../images/color_guesser.jpg");
 }
 
+.go_back {
+    text-align:center;
+    margin-top:25px;
+}
+
+.back_button {
+    display:inline-block;
+    cursor:pointer;
+}
+
+.resume_button a {
+    color:white;
+    display:inline-block;
+}
+
+.nav_button:hover {
+    color:coral;
+}
+
+.resume_button a:hover {
+    color:coral;
+}
+
+.copyright {
+    font-size:0.7em;
+}
 
 /**FOOTER**/
 .desktop_social {
@@ -507,6 +534,9 @@ form {
     }
     #full_nav {
         display:block;
+    }
+    .work_width {
+        width:530px;
     }
 }
 
