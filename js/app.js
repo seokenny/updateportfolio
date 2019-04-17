@@ -122,7 +122,7 @@ function closeNavMenu(){
 
 window.addEventListener("scroll",function(){
     if(window.scrollY == 0){
-        $("#full_nav_2").stop().fadeOut(500);
+        $("#full_nav_2").stop().fadeOut(250);
     }
-    else $("#full_nav_2").stop().fadeIn(500);
+    else $("#full_nav_2").stop().fadeIn(250);
 });

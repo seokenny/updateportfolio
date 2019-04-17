@@ -32,12 +32,16 @@ body {
 }
 
 #full_nav {
-    font-family:"Open Sans";
+    font-family:"Roboto";
+    letter-spacing:.5em;
+    font-size:0.75em;
 }
 
 #full_nav_2  {
-    font-family:"Open Sans";
-    z-index:299
+    font-family:"Roboto";
+    letter-spacing:.5em;
+    font-size:0.75em;
+    z-index:299;
 }
 
 .full_nav_bar {
@@ -54,7 +58,7 @@ body {
 .full_nav_bar li {
     margin-left:15px;
     margin-right:15px;
-    margin-top:15px;
+    margin-top:25px;
 }
 
 .fnb_black {
@@ -405,6 +409,18 @@ form {
 
 .wps_guesser {
     background-image:url("../images/color_guesser.jpg");
+}
+
+
+/**FOOTER**/
+.desktop_social {
+    width:100%;
+    text-align:center;
+}
+
+.social_button_desktop {
+    margin:40px 5px 10px 5px;
+    height:27.5px;
 }
 
 
