@@ -1,4 +1,5 @@
 $("#mobile_nav").hide();
+$("#full_nav_2").hide();
 
 $(document).ready(function(){
 
@@ -114,14 +115,14 @@ $(".nav_contact").on("click",function(){
     }, 750);
 });
 
-//NAV BAR CHANGE COLOR
-if($(window).scrollTop() == 0){
-    document.querySelector(".full_nav_bar").style.background = "white";
-}
-else
-    document.querySelector(".full_nav_bar").style.background = "black";
-
 function closeNavMenu(){
     document.querySelector("#mobile_nav").classList.remove("flipInX");
     document.querySelector("#mobile_nav").classList.add("flipOutX");
 }
+
+window.addEventListener("scroll",function(){
+    if(window.scrollY == 0){
+        $("#full_nav_2").stop().fadeOut(500);
+    }
+    else $("#full_nav_2").stop().fadeIn(500);
+});

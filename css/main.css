@@ -27,8 +27,17 @@ body {
 }
 
 /**NAVIGATION**/
+.open_m_nav {
+    z-index:275;
+}
+
 #full_nav {
     font-family:"Open Sans";
+}
+
+#full_nav_2  {
+    font-family:"Open Sans";
+    z-index:299
 }
 
 .full_nav_bar {
@@ -40,12 +49,16 @@ body {
     font-weight:bold;
     position:fixed;
     z-index:280;
-    background:black;
 }
 
 .full_nav_bar li {
     margin-left:15px;
     margin-right:15px;
+    margin-top:15px;
+}
+
+.fnb_black {
+    background:black;
 }
 
 #main_contain {
@@ -341,13 +354,17 @@ form {
     height:100vh;
     width:100%;
     position:fixed;
-    z-index:20;
+    z-index:300;
     background-image:url("../images/darknoise.gif");
     color:white;
 }
 
 #mobile_nav ul li {
     list-style-type:none;
+}
+
+.nav_button {
+    cursor:pointer;
 }
 
 .social_list {
@@ -409,6 +426,9 @@ form {
     .bw_image {
         display:none;
     }
+    #full_nav {
+        display:none;
+    }
 }
 
 @media only screen and (min-width:900px){
@@ -468,6 +488,9 @@ form {
     }
     .work_content {
         width:60%;
+    }
+    #full_nav {
+        display:block;
     }
 }
 
